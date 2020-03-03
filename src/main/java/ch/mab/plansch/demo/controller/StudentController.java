@@ -11,12 +11,12 @@ import java.util.Set;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("students")
+@RequestMapping("/students")
 @Api(value = "/", description = "Description of API")
 public class StudentController {
 
     @ApiOperation(value = "Retrieve student details")
-    @GetMapping("{studentid}")
+    @GetMapping("/{studentid}")
     public Student retrieveStudent(@PathVariable("studentid") UUID id) {
         return new Student();
     }
@@ -27,25 +27,33 @@ public class StudentController {
         return new Student();
     }
 
-    @ApiOperation(value = "Retrieve module visits by student")
-    @GetMapping("{studentid}/modulevisits")
-    public Set<ModuleVisit> retrieveModuleVisitsByStudentId(@PathVariable("studentid") UUID studentId) {
-        return Collections.emptySet();
+    @ApiOperation(value = "Update student information")
+    @PutMapping("/{studentID}")
+    public Student updateStudent(@PathVariable String studentID, @RequestBody Student student) {
+        return student;
     }
 
-    @PostMapping("{studentid}/modulevisits")
-    public void createModuleVisitByStudentId(@PathVariable("studentid") UUID studentId,
-                                             @RequestBody ModuleVisit moduleVisit) {
-    }
-
-    @PutMapping("{studentid}/modulevisits/{id}")
-    public void updateModuleVisitByStudentIdAndModuleVisitId(@PathVariable("studentid") UUID studentId,
-                                                             @PathVariable("id") UUID moduleVisitId,
-                                                             @RequestBody ModuleVisit moduleVisit) {
-    }
-
-    @DeleteMapping("{studentid}/modulevisits/{id}")
-    public void deleteModulVisitByStudentIdAndModuleVisitId(@PathVariable("studentid") UUID studentId,
-                                                            @PathVariable("id") UUID moduleVisitId) {
-    }
+//    Modulbesuche sollten über eine separate Ressource beretgestellt werden
+//
+//    @ApiOperation(value = "Retrieve module visits by student")
+//    @GetMapping("{studentid}/modulevisits")
+//    public Set<ModuleVisit> retrieveModuleVisitsByStudentId(@PathVariable("studentid") UUID studentId) {
+//        return Collections.emptySet();
+//    }
+//
+//    @PostMapping("{studentid}/modulevisits")
+//    public void createModuleVisitByStudentId(@PathVariable("studentid") UUID studentId,
+//                                             @RequestBody ModuleVisit moduleVisit) {
+//    }
+//
+//    @PutMapping("{studentid}/modulevisits/{id}")
+//    public void updateModuleVisitByStudentIdAndModuleVisitId(@PathVariable("studentid") UUID studentId,
+//                                                             @PathVariable("id") UUID moduleVisitId,
+//                                                             @RequestBody ModuleVisit moduleVisit) {
+//    }
+//
+//    @DeleteMapping("{studentid}/modulevisits/{id}")
+//    public void deleteModulVisitByStudentIdAndModuleVisitId(@PathVariable("studentid") UUID studentId,
+//                                                            @PathVariable("id") UUID moduleVisitId) {
+//    }
 }
