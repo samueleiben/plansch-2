@@ -10,5 +10,5 @@ public class ModuleGroup {
     UUID parent; // für die Abbildung Verschachtelung
     UUID course;
     Set<UUID> modules;
-    int minNoOfModules;
+    int minima;
 }
