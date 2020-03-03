@@ -4,7 +4,6 @@ import java.util.Set;
 import java.util.UUID;
 
 public class ModulGroup {
-
     UUID id;
     String name;
     Set<Modul> modules;

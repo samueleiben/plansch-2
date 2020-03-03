@@ -19,7 +19,7 @@
     </properties>
 
     <dependencies>
-
+        <!-- https://dimitr.im/generating-static-documentation-swagger -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
