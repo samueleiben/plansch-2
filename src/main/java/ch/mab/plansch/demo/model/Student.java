@@ -8,7 +8,7 @@ public class Student {
     String name;
     String vorname;
     String email;
-    String password
+    String password;
     Integer semester; // ist das der Eintritt, oder das aktuelle semester? Eintrittssemester ist aus meiner Sicht sinnvoller
     // ist Semester relevant?
     UUID couse;
