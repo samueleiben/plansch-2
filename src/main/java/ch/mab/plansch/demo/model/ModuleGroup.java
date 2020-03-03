@@ -8,7 +8,7 @@ public class ModuleGroup {
     UUID id; // übergabe als String in der API, was dann dahinter ist, sollte Backendspezifisch sein, nicht zwingend UUID
     String name;
     UUID parent; // für die Abbildung Verschachtelung
-    Course course;
-    Set<Module> modules;
+    UUID course;
+    Set<UUID> modules;
     int minNoOfModules;
 }

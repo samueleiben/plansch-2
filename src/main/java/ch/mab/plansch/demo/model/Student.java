@@ -10,6 +10,6 @@ public class Student {
     String email;
     String password;
     String startSemester; // wann das Studium begonnen wurde
-    Course couse;
+    UUID couse;
 
 }
