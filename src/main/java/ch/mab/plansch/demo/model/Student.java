@@ -11,6 +11,7 @@ public class Student {
     String password;
     Integer semester; // ist das der Eintritt, oder das aktuelle semester? Eintrittssemester ist aus meiner Sicht sinnvoller
     // ist Semester relevant?
+    // Brauchte es nicht. würde es auch löschen.
     UUID couse;
 
 }
