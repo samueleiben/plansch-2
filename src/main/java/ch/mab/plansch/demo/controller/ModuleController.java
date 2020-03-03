@@ -1,6 +1,7 @@
 package ch.mab.plansch.demo.controller;
 
 import ch.mab.plansch.demo.model.ModuleVisit;
+import ch.mab.plansch.demo.model.Module;
 import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
