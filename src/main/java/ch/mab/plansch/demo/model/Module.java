@@ -3,7 +3,7 @@ package ch.mab.plansch.demo.model;
 import java.util.Set;
 import java.util.UUID;
 
-public class Modul {
+public class Module {
 
     UUID id; // Macht keinen Sinn, Modul-ID ist bereits vorhanden in den Daten der Module
     String name;
