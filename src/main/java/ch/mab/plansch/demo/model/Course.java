@@ -4,6 +4,9 @@ package ch.mab.plansch.demo.model;
  * Model für die Abbildung des Studiengangs
  * Benötigt, damit die API ohne Probleme für weitere Studiengänge genutzt werden kann
  */
+
+
+// Was soll der Course genau darstellen?
 public class Course {
 
     String id;
