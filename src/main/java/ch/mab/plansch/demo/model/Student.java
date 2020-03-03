@@ -9,6 +9,7 @@ public class Student {
     String vorname;
     String email;
     String password;
-    Integer semester; // ist das der Eintritt, oder das aktuelle semester? Eintrittssemester ist aus meiner Sicht sinnvoller
+    String startSemester; // wann das Studium begonnen wurde
+    Course couse;
 
 }

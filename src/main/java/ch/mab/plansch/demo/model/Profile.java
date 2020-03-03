@@ -11,7 +11,6 @@ public class Profile {
     UUID id;
     String name;
     Set<Module> modules;
-    String firstSG;
-    String lastSG;
+    Course course;
     int minNoOfModules;
 }
