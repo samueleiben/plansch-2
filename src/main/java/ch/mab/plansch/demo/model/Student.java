@@ -10,5 +10,5 @@ public class Student {
     String email;
     String password;
     Integer semester; // ist das der Eintritt, oder das aktuelle semester? Eintrittssemester ist aus meiner Sicht sinnvoller
-
+    // ist Semester relevant?
 }

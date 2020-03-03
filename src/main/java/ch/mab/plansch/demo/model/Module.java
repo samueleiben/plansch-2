@@ -13,7 +13,7 @@ public class Module {
     boolean fs;
     // boolean isMandatory; // wird nicht benötigt, Diskussion von gestern (02.03.2020)
     //String[] language; // muss ja kein String sein... rapid prototype
-    ModuleGroup group;
+    UUID group;
     Set<UUID> requirements;
 
 }
