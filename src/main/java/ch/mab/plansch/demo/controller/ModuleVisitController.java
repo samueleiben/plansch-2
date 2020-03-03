@@ -19,7 +19,7 @@ public class ModuleVisitController {
 
     @GetMapping
     public List<ModuleVisit> retrieveAllVisits(
-            // @RequestParam(required = false, name = "student") String student, // nicht zwingend nötig, ist mit der Anmeldung bereits vorhanden
+            @RequestParam(required = true, name = "student") String student, // überprüfen ob loginuser gleich übergebener student ist
             @RequestParam(required = false, name = "semester") String semester // Filter um nur bestimmte Semester zu laden
     ) {
         return Collections.emptyList();
