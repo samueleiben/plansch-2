@@ -33,6 +33,14 @@ public class StudentController {
         return student;
     }
 
+    @ApiOperation(value = "Delete own profile")
+    @DeleteMapping("/{studentID}")
+    public void deleteStudent(
+            @PathVariable String studentID
+    ) {
+
+    }
+
 //    Modulbesuche sollten über eine separate Ressource beretgestellt werden
 //
 //    @ApiOperation(value = "Retrieve module visits by student")

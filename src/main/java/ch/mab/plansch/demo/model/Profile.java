@@ -10,8 +10,7 @@ import java.util.UUID;
 public class Profile {
     UUID id;
     String name;
-    Set<Module> modules;
-    String firstSG;
-    String lastSG;
+    Set<UUID> modules;
+    Course course;
     int minNoOfModules;
 }

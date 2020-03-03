@@ -12,9 +12,9 @@ public class ModuleVisit {
     UUID modul;
     String semester;
 
-    // int weekday;
-    // String timeStart;
-    // String timeEnd;
+    int weekday; // 0 => Mo, 1=> Di ...
+    String timeStart;
+    String timeEnd;
     // mit weekday, timeStart und timeEnd könnte bei der Planung eine Wochenansicht erstellt werden.
     // Was haltet Ihr davon? müsste dann ja nicht zwingend vom frontend implementiert werden, nur falls diese funktion gewünscht ist. Für meine persönliche Planung würde ich dies noch bevorzugen
 
