@@ -18,7 +18,7 @@ import java.util.List;
 public class ModuleVisitController {
 
     @GetMapping
-    // Wieso als request param und nicht path? Würde auch mit Path Params arbeiten
+    // Wieso als request param und nicht path?
     // die Methode heisst doch retrieveAllVisits und dann kann mit Parameter gesteuert werden was zurück kommt?
     // Bei Restufll sollte doch die Resource per pathparam geladen werde und irgendwelche details dann per request.
     

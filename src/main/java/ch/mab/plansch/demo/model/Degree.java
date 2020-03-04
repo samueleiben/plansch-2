@@ -8,7 +8,7 @@ package ch.mab.plansch.demo.model;
 
 // Was soll der Course genau darstellen?
 // Ist eine gute Idee für die Erweiterung für andere Studiengänge, könnte als "leerer" Endpunkt gebraucht werden, könnte momentan nur Informatik als String liefern
-public class DegreeProgram {
+public class Degree {
     String id;
     String name;
     String firstAvailable; // ab wann der Studiengang besucht werden konnte
