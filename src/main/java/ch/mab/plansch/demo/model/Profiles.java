@@ -14,6 +14,5 @@ public class Profiles {
     UUID id;
     String name;
     Set<UUID> modules;
-    Degree degree;
     int minNoOfModules;
 }
