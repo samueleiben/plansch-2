@@ -1,6 +1,6 @@
 package ch.mab.plansch.demo.controller;
 
-import ch.mab.plansch.demo.model.Course;
+import ch.mab.plansch.demo.model.Profiles;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,18 +8,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.UUID;
 
 @RestController
-@RequestMapping("/courses")
-public class CourseController {
+@RequestMapping("/profiles")
+public class ProfilesController {
 
-    @GetMapping
-    public List<Course> retrieveAllCourses() {
+    @GetMapping()
+    public List<Profiles> retrieveAllProfiles() {
         return Collections.emptyList();
     }
 
-    @GetMapping(path="/{id}")
-    public Course retrieveModule(@PathVariable("id") String id) {
-        return new Course();
+    @GetMapping("/{id}")
+    public Profiles retrieveProfiles(
+            @PathVariable("id") UUID id
+    ) {
+        return new Profiles();
     }
 }

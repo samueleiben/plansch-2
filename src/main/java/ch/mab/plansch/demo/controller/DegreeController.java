@@ -1,6 +1,7 @@
 package ch.mab.plansch.demo.controller;
 
-import ch.mab.plansch.demo.model.Profile;
+
+import ch.mab.plansch.demo.model.Degree;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,21 +9,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.UUID;
 
 @RestController
-@RequestMapping("/profiles")
-public class ProfileController {
+@RequestMapping("/degree")
+public class DegreeController {
 
-    @GetMapping()
-    public List<Profile> retrieveAllProfiles() {
+    @GetMapping
+    public List<Degree> retrieveAllProfiles() {
         return Collections.emptyList();
     }
 
-    @GetMapping("/{id}")
-    public Profile retrieveProfile(
-            @PathVariable("id") UUID id
-    ) {
-        return new Profile();
+    // Braucht es diesen Endpunkt momentan? Nur Informatik wird unterstützt, könnte in v2 vom API eingebaut werden
+    @GetMapping(path="/{id}")
+    public Degree retrieveModule(@PathVariable("id") String id) {
+        return new Degree();
     }
 }
