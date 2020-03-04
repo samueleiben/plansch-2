@@ -10,10 +10,10 @@ import java.util.UUID;
 
 // Warum braucht es das Profile? Kann ja direkt über die ModuleGroup abgehandlet werden. Denn die macht ja eigentlich genau 
 // das gleiche.
-public class Profile {
+public class Specialisation {
     UUID id;
     String name;
     Set<UUID> modules;
-    Course course;
+    DegreeProgram degree_Program;
     int minNoOfModules;
 }
