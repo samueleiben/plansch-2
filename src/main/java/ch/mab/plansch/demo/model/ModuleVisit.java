@@ -21,4 +21,6 @@ public class ModuleVisit {
     // mit weekday, timeStart und timeEnd könnte bei der Planung eine Wochenansicht erstellt werden.
     // Was haltet Ihr davon? müsste dann ja nicht zwingend vom frontend implementiert werden, nur falls diese funktion gewünscht ist. Für meine persönliche Planung würde ich dies noch bevorzugen
     // Würde ich weglassen, macht es schlussendlich nur wieder komplizierter
+    // => ich würde dies beibehalten, aber als Parameter, welche auch Null sein können, dann kann jede Gruppe selbst entscheiden, dies im Frontend zu nutzen oder nicht,
+    // ich selbst sehe da für mich bereits einen Usecase
 }
