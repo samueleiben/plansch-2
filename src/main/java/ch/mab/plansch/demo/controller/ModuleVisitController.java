@@ -29,6 +29,12 @@ public class ModuleVisitController {
         return Collections.emptyList();
     }
 
+    // Als Update Function für SPA's, Batch Update
+    @PutMapping
+    public List<ModuleVisit> updateAllVisits(@RequestBody List<ModuleVisit> visits) {
+        return Collections.emptyList();
+    }
+
     @GetMapping("/{id}")
     public ModuleVisit retrieveVisit() {
         return new ModuleVisit();
