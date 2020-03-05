@@ -14,5 +14,5 @@ public class Degree {
     String id;
     String name;
     Set<String> groups;
-    Set<String> prodiles; // aufgrund eines Kommentars von Herrn Gruntz sollten die Gruppen und Profilierungen vom Studiengang her referenziert werden (GSW usw. können ja in mehreren Studiengängen angeboten werden
+    Set<String> profiles; // aufgrund eines Kommentars von Herrn Gruntz sollten die Gruppen und Profilierungen vom Studiengang her referenziert werden (GSW usw. können ja in mehreren Studiengängen angeboten werden
 }

@@ -12,7 +12,7 @@ import java.util.UUID;
 // das gleiche.
 // => ies aufgrund der Diskussion am Montag, Herr Gruntz wird dies ebenfalls so in der GraphQL API abbilden
 // über den Namen kann man noch streiten, würde ich aber dann so übernehmen, wie es in der GraphQL API ist (siehe auch Kommentar auf Github)
-public class Profiles {
+public class Profile {
     UUID id;
     String name;
     Set<UUID> modules;

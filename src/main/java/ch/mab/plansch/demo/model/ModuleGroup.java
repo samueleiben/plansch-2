@@ -9,5 +9,5 @@ public class ModuleGroup {
     String name;
     UUID parent; // für die Abbildung Verschachtelung
     Set<UUID> modules;
-    int minima;
+    int minNoOfModules;
 }

@@ -1,6 +1,6 @@
 package ch.mab.plansch.demo.controller;
 
-import ch.mab.plansch.demo.model.Profiles;
+import ch.mab.plansch.demo.model.Profile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,17 +12,17 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/profiles")
-public class ProfilesController {
+public class ProfileController {
 
     @GetMapping()
-    public List<Profiles> retrieveAllProfiles() {
+    public List<Profile> retrieveAllProfiles() {
         return Collections.emptyList();
     }
 
     @GetMapping("/{id}")
-    public Profiles retrieveProfiles(
+    public Profile retrieveProfiles(
             @PathVariable("id") UUID id
     ) {
-        return new Profiles();
+        return new Profile();
     }
 }
