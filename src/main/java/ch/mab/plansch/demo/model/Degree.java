@@ -1,5 +1,7 @@
 package ch.mab.plansch.demo.model;
 
+import java.util.Set;
+
 /**
  * Model für die Abbildung des Studiengangs
  * Benötigt, damit die API ohne Probleme für weitere Studiengänge genutzt werden kann
@@ -11,6 +13,6 @@ package ch.mab.plansch.demo.model;
 public class Degree {
     String id;
     String name;
-    String firstAvailable; // ab wann der Studiengang besucht werden konnte
-    String lastAvailable; // letzter Start für diesen Studienhgang
+    Set<String> groups;
+    Set<String> prodiles; // aufgrund eines Kommentars von Herrn Gruntz sollten die Gruppen und Profilierungen vom Studiengang her referenziert werden (GSW usw. können ja in mehreren Studiengängen angeboten werden
 }
