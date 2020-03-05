@@ -12,7 +12,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/profiles")
-public class ProfilesController {
+public class ProfileController {
 
     @GetMapping()
     public List<Profile> retrieveAllProfiles() {
