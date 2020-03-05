@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-@RequestMapping("/degree")
+@RequestMapping("/degrees")
 public class DegreeController {
 
     @GetMapping
