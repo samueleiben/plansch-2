@@ -24,8 +24,8 @@ public class AuthController {
             @ApiResponse(code = 401, message = "unauthorized (for wrong login data)"),
             @ApiResponse(code = 400, message = "bad request (e.g. for invalid request-body format)")
     })
-    public List<Degree> login(@RequestBody LoginRequestBody body) {
-        return Collections.emptyList();
+    public AuthResponse login(@RequestBody LoginRequestBody body) {
+        return new AuthResponse();
     }
     
     @PostMapping(path="/refresh", consumes = "application/json", produces = "application/json")
@@ -34,8 +34,8 @@ public class AuthController {
     		@ApiResponse(code = 401, message = "unauthorized (for wrong login data)"),
     		@ApiResponse(code = 400, message = "bad request (e.g. for invalid request-body format)")
     })
-    public List<Degree> refresh(@RequestBody RefreshRequestBody body) {
-        return Collections.emptyList();
+    public AuthResponse refresh(@RequestBody RefreshRequestBody body) {
+        return new AuthResponse();
     }
     
     @PostMapping(path="/forgot", consumes = "application/json", produces = "application/json")
@@ -43,8 +43,7 @@ public class AuthController {
     		@ApiResponse(code = 200, message = "ok"),
     		@ApiResponse(code = 400, message = "bad request (general error)")
     })
-    public List<Degree> forgot(@RequestBody ForgotRequestBody body) {
-        return Collections.emptyList();
+    public void forgot(@RequestBody ForgotRequestBody body) {
     }
     
     class LoginRequestBody {
